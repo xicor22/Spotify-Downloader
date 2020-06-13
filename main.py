@@ -19,7 +19,7 @@ f1=file.read()
 def single():
     link=str(input("Enter the link: "))
     os.system("spotdl -s",link,"--output-file",f1)
-def playlist()
+def playlist():
     link=str(input("Enter the link: "))
     os.system("spotdl --playlist",link,"--write-to=",f1,sep="","playlist_song_link.txt",sep="")
     os.system("spotdl --list",f1,"playlist_song_link.txt",sep="","--output-file",f1)
