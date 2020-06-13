@@ -15,7 +15,8 @@ def main():
 (1) Single song
 (2) Playlist
 (3) All liked songs
-(99) Exit'''))
+(99) Exit
+Enter here: '''))
     if option==1:
         single()
     elif option==2:
