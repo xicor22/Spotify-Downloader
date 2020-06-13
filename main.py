@@ -11,7 +11,7 @@ def playlist():
     os.system("spotdl --playlist ",link,"--write-to=",f1,"playlist_song_link.txt",sep="")
     os.system("spotdl --list ",f1,"playlist_song_link.txt"," --output-file ",f1,sep="")
 def main():
-    option=int(print('''Choose from the following options:
+    option=int(input('''Choose from the following options:
 (1) Single song
 (2) Playlist
 (3) All liked songs
