@@ -1,2 +1,1 @@
-git pull
-pip3 install -r requirements.txt --upgrade
+git pull && pip3 install -r requirements.txt --upgrade
