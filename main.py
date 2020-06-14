@@ -5,7 +5,7 @@ file=open("location.txt", "r")
 f1=file.read()
 def single():
     link=str(input("Enter the link: "))
-    command="spotdl -s "+link
+    command="spotdl -s "+link+" --output-file "+f1
     os.system(command)
 def playlist():
     link=str(input("Enter the link: "))
