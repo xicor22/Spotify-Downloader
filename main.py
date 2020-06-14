@@ -5,11 +5,14 @@ file=open("location.txt", "r")
 f1=file.read()
 def single():
     link=str(input("Enter the link: "))
-    os.system("spotdl -s",link,"--output-file",f1)
+    command="spotdl -s "+link
+    os.system(command)
 def playlist():
     link=str(input("Enter the link: "))
-    os.system("spotdl --playlist ",link,"--write-to=",f1,"playlist_song_link.txt",sep="")
-    os.system("spotdl --list ",f1,"playlist_song_link.txt"," --output-file ",f1,sep="")
+    command="spotdl --playlist "+link+" --write-to= "+f1+" playlist_song_link.txt"
+    os.system(command)
+    command1="spotdl --list "+f1+" playlist_song_link.txt --output-file "+f1
+    os.system(command1)
 def main():
     option=int(input('''Choose from the following options:
 (1) Single song
