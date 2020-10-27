@@ -1,8 +1,7 @@
 # SpotifyDownloader  
-Easily download all your music through [termux](https://play.google.com/store/apps/details?id=com.termux) and support for other OS will soon be avaliable.  
+Easily download all your music, you just need python installed.  
 
 # Installation  
-**Termux**  
 ```
 git clone https://github.com/xicor22/SpotifyDownloader
 cd SpotifyDownloader
@@ -10,7 +9,10 @@ python install.py
 ```
 
 # Usage  
-After the installation just type 'spotify' anywhere and the program will trigger itself and you can download all your favorite music.  
+After the installation, goto the program directory and run the main.py program.
+```
+python main.py
+```
 
 # Credit  
 1.Dev of [spotdl](https://github.com/ritiek)  
